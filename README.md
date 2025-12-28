@@ -1,16 +1,41 @@
-## Hi there 👋
+# VEXA
 
-<!--
-**vexa-miner/vexa-miner** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**Bitcoin Solo-Mining für Jedermann** ⛏️
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Über uns
+
+Wir entwickeln kompakte, benutzerfreundliche Bitcoin Solo-Miner für Hobbyanwender. Der Vexa Miner ist ein Plug-and-Play-Gerät mit Touchscreen-Display – dein persönliches Bitcoin-Lotterielos, das rund um die Uhr läuft.
+
+## 🛒 Shop
+
+**[vexa-miner.com](https://vexa-miner.com/)** – Fertig konfigurierte Geräte, sofort einsatzbereit.
+
+## 📦 Open Source
+
+| Repository | Beschreibung |
+|------------|--------------|
+| [VexaMiner](https://github.com/VEXA/VexaMiner) | Firmware für ESP32-basierte Bitcoin Solo-Miner |
+
+## ⚡ Funktionen
+
+- 🔋 Stromsparend (~3W)
+- 📊 Echtzeit-Statistiken
+- 📱 Touch-Bedienung
+- 🌐 Web-Konfiguration
+- ⛏️ Solo-Mining auf public-pool.io
+
+## 🙏 Credits
+
+Dieses Projekt basiert auf der Arbeit von:
+- **[NerdMiner](https://github.com/BitMaker-hub/NerdMiner_v2)** von BitMaker
+- **HAN Miner** von Valerio Vaccaro
+
+---
+
+<p align="center">
+  <a href="https://vexa-miner.com/">🛒 Shop</a> •
+  <a href="https://github.com/VEXA/VexaMiner">💻 Source Code</a>
+</p>
+
