@@ -22,7 +22,6 @@ Wir entwickeln kompakte, benutzerfreundliche Bitcoin Solo-Miner für Hobbyanwend
 
 - 🔋 Stromsparend (~3W)
 - 📊 Echtzeit-Statistiken
-- 📱 Touch-Bedienung
 - 🌐 Web-Konfiguration
 - ⛏️ Solo-Mining auf public-pool.io
 
