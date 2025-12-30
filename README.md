@@ -16,7 +16,7 @@ Wir entwickeln kompakte, benutzerfreundliche Bitcoin Solo-Miner für Hobbyanwend
 
 | Repository | Beschreibung |
 |------------|--------------|
-| [VexaMiner](https://github.com/vexa-miner/VexaMiner_V1.1) | Firmware für ESP32-basierte Bitcoin Solo-Miner |
+| [VexaMiner](https://github.com/vexa-miner/VexaMiner) | Firmware für ESP32-basierte Bitcoin Solo-Miner |
 
 ## ⚡ Funktionen
 
