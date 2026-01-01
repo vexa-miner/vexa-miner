@@ -31,10 +31,10 @@ Wir entwickeln kompakte, benutzerfreundliche Bitcoin Solo-Miner für Hobbyanwend
 
 ---
 
-## 🔧 Firmware — Kurzinfo
+## 🔧 Kurzinfo
 
 - **Version:** VexaMiner V2
-- **Build-Datum:** Dezember 2025
+- **Build-Datum:** Januar 2026
 - **Funktionen:** Bitcoin Solo-Mining, Web-Konfiguration, Echtzeit-Statistiken
 
 
