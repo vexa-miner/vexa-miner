@@ -14,31 +14,31 @@ Wir entwickeln kompakte, benutzerfreundliche Bitcoin Solo-Miner für Hobbyanwend
 
 ---
 
-## 📦 Firmware
+## Open Source
 
 | Link | Beschreibung |
 |------------|--------------|
-| [Firmware](firmware/) | VEXA Miner Firmware für Bitcoin Solo-Mining |
+| [VexaMiner](https://github.com/vexa-miner/vexa-miner/) | VEXA Miner Firmware für Bitcoin Solo-Mining |
 
 ---
 
-## ⚡ Funktionen
+## Funktionen
 
-- 🔋 Stromsparend (~1W)
-- 📊 Echtzeit-Statistiken
-- 🌐 Web-Konfiguration
-- ⛏️ Solo-Mining auf public-pool.io
+- Stromsparend (~1W)
+- Echtzeit-Statistiken
+- Web-Konfiguration
+- Solo-Mining auf public-pool.io
 
 ---
 
-## 🔧 Kurzinfo
+## Firmware — Kurzinfo
 
 - **Version:** VexaMiner V2
 - **Build-Datum:** Januar 2026
 - **Funktionen:** Bitcoin Solo-Mining, Web-Konfiguration, Echtzeit-Statistiken
 
 
-## 🙏 Credits & Open Source
+## Credits & Open Source
 
 Dieses Projekt basiert auf **[NerdMiner_v2](https://github.com/BitMaker-hub/NerdMiner_v2)** – einem Open-Source Bitcoin Solo-Miner Projekt.
 
@@ -51,6 +51,6 @@ VEXA Miner ist lizenziert unter der **MIT License** – dieselbe permissive Open
 ---
 
 <p align="center">
-  <a href="https://vexa-miner.com/">🛒 Shop</a> •
-  <a href="firmware/">📦 Firmware</a>
+  <a href="https://vexa-miner.com/">Shop</a> •
+  <a href="https://github.com/vexa-miner/vexa-miner/">Source Code</a>
 </p>
