@@ -6,7 +6,7 @@
 
 ## Über uns
 
-Wir entwickeln kompakte, benutzerfreundliche Bitcoin Solo-Miner für Hobbyanwender. Der VEXA Miner™ ist ein Plug-and-Play-Gerät, dein persönliches Bitcoin-Lotterielos, das rund um die Uhr läuft.
+Wir entwickeln kompakte, benutzerfreundliche Bitcoin Solo-Miner für Hobbyanwender. Der VEXA Miner ist ein Plug-and-Play-Gerät, dein persönliches Bitcoin-Lotterielos, das rund um die Uhr läuft.
 
 ## 🛒 Shop
 
