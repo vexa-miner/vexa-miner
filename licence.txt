@@ -1,0 +1,181 @@
+NerdMiner Customization & Bulk Production: Legal, Technical & Logistics Guide
+1. Licensing & Branding Customization:
+NerdMiner V2 operates under the MIT License, which is explicitly permissive about commercial modification and resale. The MIT license explicitly permits modification, distribution, and commercial use, with only one condition: you must retain the original copyright notice and provide attribution.
+What you can do:
+Replace the NerdMiner logo on the display with "Vexa Miner"
+Modify the firmware extensively for performance or features
+Commercially resell devices running your custom firmware
+Modify the source code and compile your own versions
+What you must do (MIT requirement):
+Include original copyright notice in your product documentation
+Provide attribution to BitMaker-hub and Valerio Vácaro (original developers)
+Make the MIT license available to end users
+2. Attribution Options: Three Compliant Approaches
+The developer community shows multiple working models for attribution while maintaining your own branding:
+Option A: Boot Screen Credit (Minimal)
+Display "Vexa Miner" as primary logo
+Add small text during startup: "Powered by open-source NerdMiner"
+This satisfies MIT requirements while maintaining brand focus
+
+Option B: Multi-Screen Approach
+Main mining screen: "Vexa Miner" with your branding
+Secondary info screen: Include "Open-source NerdMiner project by BitMaker-hub"
+This is the pattern used by community developers who customize NerdMineryoutube​
+Option C: Documentation-Based Attribution
+Your display and marketing materials: "Vexa Miner"
+Product box/documentation: Include full MIT license text and attribution
+Website footer: Link to BitMaker-hub GitHub repository
+This is cleaner aesthetically but requires point-of-sale education
+Community Precedent: DIY Electronics (YouTube channel) explicitly states that developers "can manipulate [the firmware] and everything else, but we have to give a shout out to the authors," and provides their modified versions while maintaining attribution. This is the industry standard approach.youtube​
+3. Technical Complexity: Firmware Logo Modification
+Difficulty Level: Medium (not trivial, but standard firmware development work)
+What's Involved:
+Access NerdMiner V2 source code from GitHub
+Locate display graphics assets (likely .h files with bitmap data)
+Modify text strings and logo graphics for startup screens
+Recompile using PlatformIO or Arduino IDE
+Test on target board (ESP32-2432S028R)
+Development Timeline:
+Initial customization: 1–2 weeks for experienced ESP32 developer
+Testing and iteration: 3–5 days
+Total: 2–3 weeks for production-ready custom firmware
+Cost Estimate:
+Hiring freelance ESP32 developer: $750–$2,500 one-time
+This is a one-time investment; subsequent boards use the same compiled BIN file
+Alternative Approach: Use existing community-modified firmware variants if they match your requirements. Jingle Mining and DIY Electronics have created public firmware modifications with higher hash rates or additional features. You could use one of these as a starting point rather than modifying from scratch.youtube​
+4. Bulk Flashing: Chinese Suppliers Can Handle This Entirely
+This is the good news: you do not need to teach your Chinese supplier how to compile firmware. You provide pre-compiled BIN files, and they flash using automated tools.
+Method A: Factory Pre-Flashing (Recommended)
+Your supplier flashes all boards at the factory before shipping:
+You provide: Pre-compiled NerdMiner firmware (.bin files)
+Supplier does: Use standard esptool.py or similar automation to flash all boards in batch
+Timeline: Built into existing PCB assembly (no extra lead time)
+Cost: €0.50–€1.00 per unit added to assembly cost (minimal)
+Quality check: Supplier can test-boot each device to verify flashing succeeded
+How it works technically:
+Supplier sets up a Linux PC or Raspberry Pi with esptool.py installed
+USB hub connected to 5–10 ESP32 boards simultaneously
+Python script auto-detects boards and flashes in parallel
+Takes ~2–3 minutes per board (can be fully automated)
+This is a standard industrial process. No special skills required—most China suppliers doing IoT manufacturing already have this capability.
+Method B: You Flash Locally (Alternative)
+If you want full brand control and QA transparency:
+Supplier ships you unflashed ESP32 boards + displays
+You assemble or have Swiss partner assemble
+You or hired staff flash boards in Switzerland using same tools
+You control quality and can test each unit
+Advantages:
+Complete transparency and brand control
+Can inspect boards before flashing
+No reliance on factory processes
+Disadvantages:
+Labor cost: €1–3 per unit (even with multiple parallel setups)
+Timeline: adds 2–3 weeks to delivery
+You need equipment (USB hub, Linux PC, esptool)
+Method C: Hybrid Approach
+Supplier pre-flashes with open-source NerdMiner as "base" in China
+You receive boards and perform OTA (over-the-air) update to custom Vexa firmware
+Requires custom OTA setup (more complex but future-flexible)
+5. The Labor Question: Flashing vs. Assembly
+No "kid” worker :p
+Firmware flashing itself is not hazardous work, but it's worth clarifying expectations:
+Flashing: Plugging boards into a USB hub and running a script is unskilled automation, suitable for any junior worker
+Better practice: Train one supervisor to manage the flashing process and verify results
+Alternative: Since you're already integrating hardware in Switzerland (likely), flashing there gives you complete control and removes labor ethics concerns
+If using a Chinese supplier for flashing, specify in the contract that boards must be flashed by trained staff with temperature monitoring (avoid ESD damage), which is standard anyway.
+
+
+
+6. Technical Implementation Path
+Week 1–2: Firmware Development
+Hire ESP32/firmware developer (Upwork, local Swiss tech community, or Fahim :3)
+Provide them: NerdMiner GitHub repo + your design brief (logo, boot message, etc.)
+Developer compiles custom BIN files for your target board
+Week 3: Testing & Validation
+Receive compiled BIN files
+Flash one reference board yourself using web flasher or esptool
+Test on your hardware setup
+Verify display shows "Vexa Miner" correctly, hash rate is accurate, etc.
+Week 4: Factory Integration
+Send verified BIN files + flashing instructions to China supplier
+Supplier sets up esptool flashing station
+Supplier flashes your bulk order
+You receive pre-flashed, ready-to-ship boards
+7. GitHub & Open-Source Transparency
+Marketing Advantage: Consider making your Vexa Miner firmware publicly available on GitHub (under same MIT license):
+"Based on open-source NerdMiner v2 by BitMaker-hub"
+Builds community trust (especially in DACH region)
+Developers can suggest improvements
+You maintain your Vexa branding while contributing to open-source
+This is increasingly important for ESG/ethical positioning
+Even if you don't open-source, crediting NerdMiner publicly on your website/product pages is the ethical standard.
+
+
+8. Timeline for Next Steps
+Task
+Timeline
+Owner
+Hire firmware developer
+This week
+You
+Custom firmware development
+2–3 weeks
+Developer
+Testing & refinement
+1 week
+You + developer
+Factory integration/flashing setup
+1 week
+Supplier
+Total before production
+4–5 weeks
+—
+
+Summary: What You Can Do
+✅ Replace NerdMiner logo with Vexa Miner 	 MIT license allows this fully
+✅ Modify firmware extensively 			 Permitted with attribution
+✅ Charge a premium for your custom version 	 Commercial resale is allowed
+✅ Have China supplier pre-flash boards 		 Standard industrial practice
+✅ Use a simple boot-screen attribution 		 Satisfies legal requirements cleanly
+
+The "vibe kill" concern you mentioned about displaying "NerdMiner" is solvable: just show "Vexa Miner" on the main screen and handle attribution via a brief startup message or website credit. This is exactly what other community developers do.youtube​
+Next immediate step: Find an ESP32 firmware developer and start the customization work, this is your rate-limiting factor. Everything else (factory flashing, attribution) is straightforward logistics.
+
+
+
+
+
+
+Ref:
+https://opensource.org/license/mit
+https://www.youtube.com/watch?v=Br_SfnTotrI
+https://github.com/BitMaker-hub/NerdMiner_v2
+https://esp32.com/viewtopic.php?t=36132
+https://www.pleasedontcode.com/blog/flash-multiple-esp32-boards-simultaneously
+https://www.reddit.com/r/esp32/comments/1en4el3/bulk_flashing/
+https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/61778722/043e4521-8a60-4e63-9ac6-aa60c0ce115b/Ethical-Technical-Validation-of-Bitcoin-Mini-Solo-Miners-NM-Miner-focus.docx
+https://altairtech.io/product/nerdminer-v2-bitcoin-miner/
+https://www.globalsources.com/china-suppliers/esp32.htm
+https://docs.github.com/articles/licensing-a-repository
+https://www.youtube.com/watch?v=Op7SR1Qtzc8
+https://www.alibaba.com/supplier/esp32-bulk-price.html
+https://github.com/shadcn-ui/ui/discussions/2339
+https://www.youtube.com/watch?v=07cP98s4nTQ
+https://www.soselectronic.com/en-cn/products/espressif/esp32-wrover-ie-esp32-wrover-ie-n4r8-287656
+https://github.com/shadcn-ui/ui/issues/2330
+https://hackmd.io/@cosmicpsyop/Skr4CUlE0
+https://www.youtube.com/watch?v=OhCHMbJsOZw
+https://github.com/BitMaker-hub/NerdMiner_v2/releases
+https://www.youtube.com/watch?v=6UNfRcWZMnc
+https://github.com/paelzer/ESP32_ST7735_Nerdminer_V2
+https://www.cnshenergy.com/esp32-custom-pcb/
+https://www.youtube.com/watch?v=zQ03Uw3cjVM
+https://www.youtube.com/watch?v=MUs7ArM8VHQ
+https://d-central.tech/open-source-bitcoin-mining-revolutionizing-the-industry/
+https://github.com/BitMaker-hub/NerdMiner_v2/issues/522
+https://www.reddit.com/r/NerdMiner/comments/1p0tg6k/one_shot_miner_firmware_bin_file/
+https://github.com/BitMaker-hub/NerdAxe
+https://commons.wikimedia.org/wiki/File:Nerdminer_01.jpg
+https://www.bitcoinstuffstore.com/en_us/nerdminer-setup-installation-roadmap/
+https://github.com/BitMaker-hub/NerdMiner_v2/discussions/502
+

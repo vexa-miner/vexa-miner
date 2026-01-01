@@ -1,0 +1,27 @@
+# Hardware und Flash-Anleitungen (nicht für GitHub)
+FLASH_PACKAGE/
+
+# 3D-Dateien und Hardware-Dateien
+*.stl
+*.step
+*.stp
+*.obj
+hardware/
+3d_files/
+
+# Build-Dateien
+.pio/
+.vscode/
+build/
+*.bin
+*.elf
+
+# IDE-Dateien
+.DS_Store
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
